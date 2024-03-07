@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#f5f5f5]">
+    <header class="bg-[#01756C] p-2">
+      <div class="container mx-auto">
+        <nav class="flex justify-between">
+          <img src="./images/Logo.svg" alt="" />
+          <ul class="flex items-center gap-10 text-white">
+            <li>
+              <a href="#" class="flex items-center"
+                >Eng
+                <box-icon name="chevron-right" color="#ffffff"></box-icon>
+                Uzb</a
+              >
+            </li>
+            <li>
+              <a href="#" class="flex items-center"
+                >Rus
+                <box-icon name="chevron-right" color="#ffffff"></box-icon>
+                Uzb</a
+              >
+            </li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Grammar</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="flex flex-col justify-evenly items-center min-h-[100vh]">
+      <label
+        for=""
+        class="w-[847px] flex items-center bg-[#fff] rounded-[100px] p-2"
+      >
+        <button
+          class="w-[174px] bg-[#01756C] px-[36px] py-[20px] rounded-[100px] flex items-center justify-center text-white"
+        >
+          Eng <box-icon name="chevron-right" color="#ffffff"></box-icon> Uzb
+        </button>
+        <box-icon name="search-alt-2" color="#aaaaaa" class="ml-3"></box-icon>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search words here..."
+          class="outline-none bg-transparent w-[500px]"
+        />
+      </label>
+
+      <div class="bg-img flex flex-col items-center justify-center" id="delete">
+        <h3 class="text-[24px] w-[620px] text-center">
+          Search any words, and we found this word
+        </h3>
+        <p class="text-[24px] w-[620px] text-center">
+          defination, translation and etc.
+        </p>
+      </div>
+
+      <div id="searched" class="search-hide bg-white w-[800px] h-[200px] ">
+        
+      </div>
+
+    </main>
+    <footer class="bg-[#01756C] p-7">
+      <div class="container flex justify-between items-center">
+        <h2 class="text-white">Leksika.uz - 2022-2023</h2>
+        <ul class="flex gap-5">
+          <li>
+            <a href="#"
+              ><box-icon name="telegram" type="logo" color="#ffffff"></box-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><box-icon name="instagram" type="logo" color="#ffffff"></box-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><box-icon name="facebook" type="logo" color="#ffffff"></box-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><box-icon name="youtube" type="logo" color="#ffffff"></box-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><box-icon name="twitter" type="logo" color="#ffffff"></box-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="./JS/utils.js"></script>
+  <script src="./JS/index.js"></script>
+</html>
